@@ -1,29 +1,30 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Offers</h1>
+<h1>Listagem de Disciplinas por fase</h1>
 
-<table>
+<table border="1px">
   <thead>
     <tr>
+      <th>Código</th>
+      <th>Nome</th>
       <th>Professor</th>
-      <th>Course</th>
-      <th colspan="3"></th>
+      <th>Turno</th>
     </tr>
   </thead>
 
   <tbody>
-    <% @offers.each do |offer| %>
-      <tr>
-        <td><%= offer.professor %></td>
-        <td><%= offer.course %></td>
-        <td><%= link_to 'Show', offer %></td>
-        <td><%= link_to 'Edit', edit_offer_path(offer) %></td>
-        <td><%= link_to 'Destroy', offer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+    <% @offers.select { |o| o.active }.group_by { |o| o.semester }.each do |s, offers| %>
+      <tr> <th colspan="4"> Fase: <%= s %> </th> </tr>
+      <% offers.sort_by { |o| o.course.code }.each do |offer| %>
+        <tr>
+          <td><%= offer.course.code %></td>
+          <td><%= offer.course.name %></td>
+          <td><%= offer.professor.name %></td>
+          <td><%= offer.turno %></td>
+        </tr>
+      <% end %>
     <% end %>
   </tbody>
 </table>
 
-<br>
 
-<%= link_to 'New Offer', new_offer_path %>
