@@ -1,0 +1,1 @@
+rails g scaffold answer offer:references a01:integer a02:integer a03:integer a04:integer a05:integer a06:integer a07:integer a08:integer a09:integer a10:integer a11:integer a12:integer a13:integer a14:integer comment:text

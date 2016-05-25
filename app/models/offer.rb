@@ -1,6 +1,7 @@
 class Offer < ActiveRecord::Base
   belongs_to :professor
   belongs_to :course
+  has_many :answers
 
   def self.create_by_names!(codigo, nome, professor, turno, fase, ativo)
 

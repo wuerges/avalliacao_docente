@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  offer_id: 
+  a01: 1
+  a02: 1
+  a03: 1
+  a04: 1
+  a05: 1
+  a06: 1
+  a07: 1
+  a08: 1
+  a09: 1
+  a10: 1
+  a11: 1
+  a12: 1
+  a13: 1
+  a14: 1
+  comment: MyText
+
+two:
+  offer_id: 
+  a01: 1
+  a02: 1
+  a03: 1
+  a04: 1
+  a05: 1
+  a06: 1
+  a07: 1
+  a08: 1
+  a09: 1
+  a10: 1
+  a11: 1
+  a12: 1
+  a13: 1
+  a14: 1
+  comment: MyText

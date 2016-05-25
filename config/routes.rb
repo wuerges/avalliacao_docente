@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  resources :offers
+  #resources :answers
+  resources :offers do 
+    resources :answers
+  end
   resources :courses
   resources :professors
   # The priority is based upon order of creation: first created -> highest priority.

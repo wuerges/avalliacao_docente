@@ -1,0 +1,61 @@
+<h1>
+  Avaliação do Componente Curricular:
+    <%= @offer.course.name %> - <%= @offer.turno %>
+    (<%= @offer.professor.name %>)
+</h1>
+
+<%= form_for [@offer, @answer] do |f| %>
+  <% if @answer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@answer.errors.count, "error") %> prohibited this answer from being saved:</h2>
+
+      <ul>
+      <% @answer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <h2> Como Aluno: </h2>
+
+  <% Answer.como_aluno.each do |k,t| %>
+    <div class="field">
+      <%= f.label t %><br>
+      <% Answer.resposta_pergunta[k].each do |nr,txt| %>
+        <%= f.radio_button k, nr %> 
+        <%= f.label txt %> <br />
+      <% end %>
+    </div>
+  <% end %>
+
+  <h2>O professor do componente curricular:</h2>
+
+  <% Answer.sobre_professor.each do |k,t| %>
+    <div class="field">
+      <%= f.label t %><br>
+      <% Answer.resposta_pergunta[k].each do |nr,txt| %>
+        <%= f.radio_button k, nr %> 
+        <%= f.label txt %> <br />
+      <% end %>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label "Críticas e sugestões:" %><br/>
+    <font color=gray> Sua opinião é importante para o melhoramento da disciplina e crescimento do professor.</font>
+    <br/>
+    
+    <%= f.text_area :comment, size: "60x10" %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+
+
+<%= link_to 'Back', offer_answers_path(@offer) %>
+
+
+

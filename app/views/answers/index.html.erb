@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listagem de respostas para disciplina:
+    <%= @offer.course.name %> - <%= @offer.turno %>
+    (<%= @offer.professor.name %>)
+</h1>
+
+<table border="1px">
+  <thead>
+    <tr>
+      <% (Answer.como_aluno.to_a + 
+          Answer.sobre_professor.to_a).each do |k,t| %>
+        <th><%= t %></th>
+      <% end %>
+      <th>Comentário</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @answers.each do |answer| %>
+      <tr>
+        
+        <% (Answer.como_aluno.to_a + 
+            Answer.sobre_professor.to_a).each do |k,t| %>
+            <td>
+              <%= answer.texto(k) %>
+            </td>
+          <% end %>
+          <td>
+            <%= answer.comment %>
+          </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Answer', new_offer_answer_path(params) %>

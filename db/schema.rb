@@ -11,7 +11,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160525153325) do
+ActiveRecord::Schema.define(version: 20160525185552) do
+
+  create_table "answers", force: :cascade do |t|
+    t.integer  "offer_id",   null: false
+    t.integer  "a01",        null: false
+    t.integer  "a02",        null: false
+    t.integer  "a03",        null: false
+    t.integer  "a04",        null: false
+    t.integer  "a05",        null: false
+    t.integer  "a06",        null: false
+    t.integer  "a07",        null: false
+    t.integer  "a08",        null: false
+    t.integer  "a09",        null: false
+    t.integer  "a10",        null: false
+    t.integer  "a11",        null: false
+    t.integer  "a12",        null: false
+    t.integer  "a13",        null: false
+    t.integer  "a14",        null: false
+    t.text     "comment"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "answers", ["offer_id"], name: "index_answers_on_offer_id"
 
   create_table "courses", force: :cascade do |t|
     t.text     "code"
