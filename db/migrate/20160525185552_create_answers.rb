@@ -1,6 +1,7 @@
 class CreateAnswers < ActiveRecord::Migration
   def change
     create_table :answers do |t|
+      t.integer :secure_id, :limit => 8
       t.references :offer, index: true, foreign_key: true, null: false
       t.integer :a01, null: false
       t.integer :a02, null: false
@@ -20,5 +21,6 @@ class CreateAnswers < ActiveRecord::Migration
 
       t.timestamps null: false
     end
+    add_index :answers, :secure_id, unique: true
   end
 end

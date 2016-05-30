@@ -29,11 +29,15 @@ class Offer < ActiveRecord::Base
   end
 
 
+  def to_param
+    secure_id.to_s
+  end
+
 
   private
   def randomize_id
     begin
-      self.id = SecureRandom.random_number(1_000_000_000_000_000)
-    end while Model.where(id: self.id).exists?
+      self.secure_id = SecureRandom.random_number(2**63)
+    end while Offer.where(secure_id: self.secure_id).exists?
   end
 end

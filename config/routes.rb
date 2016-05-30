@@ -5,12 +5,20 @@ Rails.application.routes.draw do
   delete 'logout' => 'sessions#destroy'
   get    'logout' => 'sessions#destroy'
 
+
+
+
+  #get 'offers/:secure_id/answers' => 'answers#index', 
+  #  :as => 'offer_answers'
+  #post 'offers/:secure_id/answers' => 'answers#create',
+  #  :as => 'offer_answers'
+
   resources :users
-  resources :offers do 
+  resources :offers do #, :param => :secure_id do 
     resources :answers
   end
-  resources :courses
-  resources :professors
+  #resources :courses
+  #resources :professors
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

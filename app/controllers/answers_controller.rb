@@ -43,10 +43,10 @@ class AnswersController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_offer
-      @offer = Offer.find(params[:offer_id])
+      @offer = Offer.find_by(secure_id: params[:offer_id])
     end
     def set_answer
-      @answer = Answer.find(params[:id])
+      @answer = Answer.find_by(secure_id: params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

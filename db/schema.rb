@@ -14,27 +14,29 @@
 ActiveRecord::Schema.define(version: 20160530132537) do
 
   create_table "answers", force: :cascade do |t|
-    t.integer  "offer_id",   null: false
-    t.integer  "a01",        null: false
-    t.integer  "a02",        null: false
-    t.integer  "a03",        null: false
-    t.integer  "a04",        null: false
-    t.integer  "a05",        null: false
-    t.integer  "a06",        null: false
-    t.integer  "a07",        null: false
-    t.integer  "a08",        null: false
-    t.integer  "a09",        null: false
-    t.integer  "a10",        null: false
-    t.integer  "a11",        null: false
-    t.integer  "a12",        null: false
-    t.integer  "a13",        null: false
-    t.integer  "a14",        null: false
+    t.integer  "secure_id",  limit: 8
+    t.integer  "offer_id",             null: false
+    t.integer  "a01",                  null: false
+    t.integer  "a02",                  null: false
+    t.integer  "a03",                  null: false
+    t.integer  "a04",                  null: false
+    t.integer  "a05",                  null: false
+    t.integer  "a06",                  null: false
+    t.integer  "a07",                  null: false
+    t.integer  "a08",                  null: false
+    t.integer  "a09",                  null: false
+    t.integer  "a10",                  null: false
+    t.integer  "a11",                  null: false
+    t.integer  "a12",                  null: false
+    t.integer  "a13",                  null: false
+    t.integer  "a14",                  null: false
     t.text     "comment"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
   end
 
   add_index "answers", ["offer_id"], name: "index_answers_on_offer_id"
+  add_index "answers", ["secure_id"], name: "index_answers_on_secure_id", unique: true
 
   create_table "courses", force: :cascade do |t|
     t.text     "code"
@@ -47,14 +49,17 @@ ActiveRecord::Schema.define(version: 20160530132537) do
   add_index "courses", ["name"], name: "index_courses_on_name", unique: true
 
   create_table "offers", force: :cascade do |t|
-    t.integer  "professor_id", null: false
-    t.integer  "course_id",    null: false
-    t.integer  "semester",     null: false
-    t.integer  "shift",        null: false
-    t.boolean  "active",       null: false
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.integer  "secure_id",    limit: 8
+    t.integer  "professor_id",           null: false
+    t.integer  "course_id",              null: false
+    t.integer  "semester",               null: false
+    t.integer  "shift",                  null: false
+    t.boolean  "active",                 null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
+
+  add_index "offers", ["secure_id"], name: "index_offers_on_secure_id", unique: true
 
   create_table "professors", force: :cascade do |t|
     t.text     "name",       null: false

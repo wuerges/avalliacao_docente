@@ -17,7 +17,7 @@
   </thead>
 
   <tbody>
-    <% @offers.select { |o| o.active }.group_by { |o| o.semester }.each do |s, offers| %>
+    <% @offers.select { |o| o.active }.group_by { |o| o.semester }.sort_by { |s, os| s }.each do |s, offers| %>
       <tr> <th colspan="4"> Fase: <%= s %> </th> </tr>
       <% offers.sort_by { |o| o.course.code }.each do |offer| %>
         <tr>

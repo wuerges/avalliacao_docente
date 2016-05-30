@@ -1,5 +1,6 @@
 class Answer < ActiveRecord::Base
   belongs_to :offer
+  before_create :randomize_id
 
   validates :a01, presence: true
   validates :a02, presence: true
@@ -71,6 +72,17 @@ class Answer < ActiveRecord::Base
     else
       bom_mal[send cod]
     end
+  end
+
+  def to_param
+    secure_id.to_s
+  end
+
+  private
+  def randomize_id
+    begin
+      self.secure_id = SecureRandom.random_number(2**63)
+    end while Answer.where(secure_id: self.secure_id).exists?
   end
 
 end
