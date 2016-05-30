@@ -5,12 +5,20 @@ class AnswersController < ApplicationController
   # GET /answers
   # GET /answers.json
   def index
-    @answers = @offer.answers
+    if logged_in?
+      @answers = @offer.answers
+    else
+      redirect_to '/login'
+    end
   end
 
   # GET /answers/1
   # GET /answers/1.json
   def show
+    if logged_in?
+    else
+      redirect_to '/login'
+    end
   end
 
   # GET /answers/new

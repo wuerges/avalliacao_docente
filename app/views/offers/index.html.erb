@@ -9,8 +9,10 @@
       <th>Nome</th>
       <th>Professor</th>
       <th>Turno</th>
-      <th>Respostas</th>
-      <th>Link para responder</th>
+      <% if logged_in? %>
+        <th>Respostas</th>
+        <th>Link para responder</th>
+    <% end %>
     </tr>
   </thead>
 
@@ -23,8 +25,10 @@
           <td><%= offer.course.name %></td>
           <td><%= offer.professor.name %></td>
           <td><%= offer.turno %></td>
-          <td><%= link_to 'Respostas', offer_answers_path(offer) %></td>
-          <td><%= link_to 'New Answer', new_offer_answer_path(offer) %> </td>
+          <% if logged_in? %>
+            <td><%= link_to 'Respostas', offer_answers_path(offer) %></td>
+            <td><%= link_to 'New Answer', new_offer_answer_path(offer) %> </td>
+          <% end %>
         </tr>
       <% end %>
     <% end %>

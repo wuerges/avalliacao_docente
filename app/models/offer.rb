@@ -2,6 +2,8 @@ class Offer < ActiveRecord::Base
   belongs_to :professor
   belongs_to :course
   has_many :answers
+  before_create :randomize_id
+
 
   def self.create_by_names!(codigo, nome, professor, turno, fase, ativo)
 
@@ -26,4 +28,12 @@ class Offer < ActiveRecord::Base
 
   end
 
+
+
+  private
+  def randomize_id
+    begin
+      self.id = SecureRandom.random_number(1_000_000_000_000_000)
+    end while Model.where(id: self.id).exists?
+  end
 end
