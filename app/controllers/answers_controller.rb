@@ -2,6 +2,7 @@ class AnswersController < ApplicationController
   before_action :set_offer
   before_action :set_answer, only: [:show, :edit, :update, :destroy]
 
+
   # GET /answers
   # GET /answers.json
   def index
