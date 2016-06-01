@@ -16,10 +16,10 @@ class AnswersController < ApplicationController
   # GET /answers/1
   # GET /answers/1.json
   def show
-    if logged_in?
-    else
-      redirect_to login_path
-    end
+    #if logged_in?
+    #else
+    #  redirect_to login_path
+    #end
   end
 
   # GET /answers/new
