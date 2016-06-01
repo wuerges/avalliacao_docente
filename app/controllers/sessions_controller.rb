@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     if @user && @user.authenticate(params[:session][:password])
       login
       #session[:user_id] = @user.id
-      redirect_to '/offers'
+      redirect_to offers_path
     else 
       render 'new'
     end
@@ -15,7 +15,7 @@ class SessionsController < ApplicationController
 
   def destroy
     logout
-    redirect_to '/login'
+    redirect_to login_path
   end
 
 end

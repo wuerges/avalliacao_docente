@@ -9,7 +9,7 @@ class AnswersController < ApplicationController
     if logged_in?
       @answers = @offer.answers
     else
-      redirect_to '/login'
+      redirect_to login_path
     end
   end
 
@@ -18,7 +18,7 @@ class AnswersController < ApplicationController
   def show
     if logged_in?
     else
-      redirect_to '/login'
+      redirect_to login_path
     end
   end
 
