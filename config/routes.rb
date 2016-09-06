@@ -1,3 +1,4 @@
+
 Rails.application.routes.draw do
   #get 'sessions/new'
   get    'login'  => 'sessions#new'
@@ -7,16 +8,17 @@ Rails.application.routes.draw do
 
 
 
+  get 'offers/', to: 'offers#index'
+  get 'offers/:secure_list_id/answers', param: :secure_list_id, to: 'answers#index', as: 'offer_answers'
+  get 'offers/:secure_create_id/answers/new', param: :secure_create_id, to: 'answers#new', as: 'new_offer_answer'
+  post 'offers/:secure_create_id/answers/new', param: :secure_create_id, to: 'answers#create', as: 'create_offer_answer'
 
-  #get 'offers/:secure_id/answers' => 'answers#index', 
-  #  :as => 'offer_answers'
-  #post 'offers/:secure_id/answers' => 'answers#create',
-  #  :as => 'offer_answers'
 
   resources :users
-  resources :offers do #, :param => :secure_id do 
-    resources :answers
-  end
+  #resources :offers do #, :param => :secure_id do 
+  #  resources :answers
+  #end
+  #
   #resources :courses
   #resources :professors
   # The priority is based upon order of creation: first created -> highest priority.

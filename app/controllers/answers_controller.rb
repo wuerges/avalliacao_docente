@@ -1,16 +1,17 @@
 class AnswersController < ApplicationController
-  before_action :set_offer
+  #before_action :set_offer
   before_action :set_answer, only: [:show, :edit, :update, :destroy]
 
 
   # GET /answers
   # GET /answers.json
   def index
-    if logged_in?
-      @answers = @offer.answers
-    else
-      redirect_to login_path
-    end
+    @offer = Offer.find_by(secure_list_id: params[:secure_list_id])
+    @answers = @offer.answers
+    #if logged_in?
+    #else
+    #  redirect_to login_path
+    #end
   end
 
   # GET /answers/1
@@ -24,12 +25,14 @@ class AnswersController < ApplicationController
 
   # GET /answers/new
   def new
+    @offer = Offer.find_by(secure_create_id: params[:secure_create_id])
     @answer = Answer.new(offer: @offer)
   end
 
   # POST /answers
   # POST /answers.json
   def create
+    @offer = Offer.find_by(secure_create_id: params[:secure_create_id])
     @answer = @offer.answers.new(answer_params)
 
     respond_to do |format|
@@ -43,9 +46,9 @@ class AnswersController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_offer
-      @offer = Offer.find_by(secure_id: params[:offer_id])
-    end
+    #def set_offer_list
+    #  @offer = Offer.find_by(secure_id: params[:offer_id])
+    #end
     def set_answer
       @answer = Answer.find_by(secure_id: params[:id])
     end

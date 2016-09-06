@@ -49,17 +49,19 @@ ActiveRecord::Schema.define(version: 20160530132537) do
   add_index "courses", ["name"], name: "index_courses_on_name", unique: true
 
   create_table "offers", force: :cascade do |t|
-    t.integer  "secure_id",    limit: 8
-    t.integer  "professor_id",           null: false
-    t.integer  "course_id",              null: false
-    t.integer  "semester",               null: false
-    t.integer  "shift",                  null: false
-    t.boolean  "active",                 null: false
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.integer  "secure_create_id", limit: 8
+    t.integer  "secure_list_id",   limit: 8
+    t.integer  "professor_id",               null: false
+    t.integer  "course_id",                  null: false
+    t.integer  "semester",                   null: false
+    t.integer  "shift",                      null: false
+    t.boolean  "active",                     null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
   end
 
-  add_index "offers", ["secure_id"], name: "index_offers_on_secure_id", unique: true
+  add_index "offers", ["secure_create_id"], name: "index_offers_on_secure_create_id", unique: true
+  add_index "offers", ["secure_list_id"], name: "index_offers_on_secure_list_id", unique: true
 
   create_table "professors", force: :cascade do |t|
     t.text     "name",       null: false
