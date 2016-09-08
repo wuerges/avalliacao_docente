@@ -8,19 +8,15 @@ class AnswersController < ApplicationController
   def index
     @offer = Offer.find_by(secure_list_id: params[:secure_list_id])
     @answers = @offer.answers
-    #if logged_in?
-    #else
-    #  redirect_to login_path
-    #end
   end
 
   # GET /answers/1
   # GET /answers/1.json
   def show
-    #if logged_in?
-    #else
-    #  redirect_to login_path
-    #end
+  end
+
+  # GET /ok
+  def ok
   end
 
   # GET /answers/new
@@ -37,7 +33,7 @@ class AnswersController < ApplicationController
 
     respond_to do |format|
       if @answer.save
-        format.html { redirect_to [@offer, @answer], notice: 'Answer was successfully created.' }
+        format.html { redirect_to answer_ok_path, notice: 'Sua resposta foi recebida.' }
       else
         format.html { render :new }
       end

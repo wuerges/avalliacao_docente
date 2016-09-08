@@ -4,7 +4,7 @@
     (<%= @offer.professor.name %>)
 </h1>
 
-<%= form_for [@offer, @answer] do |f| %>
+<%= form_for([@offer, @answer], url: create_offer_answer_path(@offer.secure_create_id))  do |f| %>
   <% if @answer.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@answer.errors.count, "error") %> prohibited this answer from being saved:</h2>
@@ -52,10 +52,5 @@
     <%= f.submit %>
   </div>
 <% end %>
-
-
-
-<%= link_to 'Back', offer_answers_path(@offer) %>
-
 
 

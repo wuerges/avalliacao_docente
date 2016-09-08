@@ -8,10 +8,11 @@ Rails.application.routes.draw do
 
 
 
-  get 'offers/', to: 'offers#index'
+  get 'links/17680270212579271896', to: 'offers#index'
   get 'offers/:secure_list_id/answers', param: :secure_list_id, to: 'answers#index', as: 'offer_answers'
   get 'offers/:secure_create_id/answers/new', param: :secure_create_id, to: 'answers#new', as: 'new_offer_answer'
   post 'offers/:secure_create_id/answers/new', param: :secure_create_id, to: 'answers#create', as: 'create_offer_answer'
+  get 'ok', to: 'answers#ok', as: 'answer_ok'
 
 
   resources :users
