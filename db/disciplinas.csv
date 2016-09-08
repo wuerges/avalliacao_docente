@@ -1,101 +1,103 @@
 CODIGO,NOME,PROFESSOR,TURNO,FASE,ATIVO
-GEX003,Algoritmos e Programação,Guilherme Dal Bianco,M,1,S
-GEX003,Algoritmos e Programação,Marcia Boel,M,1,S
-GEN001,Circuitos Digitais,Adriano Padilha,M,1,S
-GEN001,Circuitos Digitais,Jacson Matte,M,1,S
-GEX004,Geometria Analítica,Marina Geremia,M,1,S
-GEX002,Introdução à Informática,Raquel Pegoraro,M,1,S
-GLA001,Leitura e Produção Textual I,Aline Gravina,M,1,S
-GEX001,Matemática Instrumental,Lucia Menoncini,M,1,S
-GEX003,Algoritmos e Programação,Guilherme Dal Bianco,N,1,N
-GEX003,Algoritmos e Programação,Marcia Boel,N,1,N
-GEN001,Circuitos Digitais,Adriano Padilha,N,1,N
-GEN001,Circuitos Digitais,Jacson Matte,N,1,N
-GEX002,Introdução à Informática,Raquel Pegoraro,N,1,N
-GLA001,Leitura e Produção Textual I,Aline Gravina,N,1,N
-GEX001,Matemática Instrumental,Lucia Menoncini,N,1,N
-GEX012,Álgebra Linear,Daiane Pedó Socoloski,M,2,N
-GEX009,Cálculo I,Daiane Pedó Socoloski,M,2,N
-GEX006,Estatística Básica,Leandro Bordin,M,2,N
-GEX015,Estrutura de Dados I,Jacson Luis Matte,M,2,N
-GLA004,Leitura e Produção Textual II,Ani Carla Marchesan,M,2,N
-GEX016,Sistemas Digitais,Jacson Luis Matte,M,2,N
-GEX004,Geometria Analítica,Marina Geremia,N,2,S
-GEX006,Estatística Básica,Gláucio Fontana,N,2,S
-GEX015,Estrutura de Dados I,Jacson Luis Matte,N,2,S
-GLA004,Leitura e Produção Textual II,Mari Estela Surdi,N,2,S
-GEX016,Sistemas Digitais,Emílio Wuerges,N,2,S
-GEX033,Cálculo II,Janice T. Reichert,M,3,S
-GEX092,Estrutura de Dados II,Guilherme Dal Bianco,M,3,S
-GEX093,Matemática Discreta,Paulo Bosing,M,3,S
-GEX100,Org. Computadores,Jacson Luis Matte,M,3,S
-GEX005,Probabilidade e Estatística,Éverton,M,3,S
-GEX098,Programação I,Marcia Boell,M,3,S
-GEX012,Álgebra Linear,Daiane Pedó Socoloski,N,3,N
-GEX009,Cálculo I,Daiane Pedó Socoloski,N,3,N
-GEX092,Estrutura de Dados II,Guilherme Dal Bianco,N,3,N
-GEX093,Matemática Discreta,Paulo Bosing,N,3,N
-GEX098,Programação I,Marcia Boell,N,3,N
-GEX090,Banco de Dados I,Denio Duarte,M,4,N
-GEX036,Cálculo Numérico,Vitor José Petry,M,4,N
-GEN039,Grafos,Leandro M. Zatesko,M,4,N
-GCH011,Introdução ao Pensamento Social,Sem Nome,M,4,N
-GEX099,Programação II,Marcia Boell,M,4,N
-GEX104,Teoria da Computação,Leandro M. Zatesko,M,4,N
-GEX033,Cálculo II,Edson Ribeiro dos Santos,N,4,S
-GEX100,Org. Computadores,Adriano Padilha,N,4,S
-GEX005,Probabilidade e Estatística,Leandro Bordin,N,4,S
-GEX090,Banco de Dados I,Denio Duarte,N,4,S
-GEX099,Programação II,Marcia Boell,N,4,S
-GEX091,Banco de Dados II,Denio Duarte,M,5,S
-GCS010,Direito e Cidadania,Claudete Soares,M,5,S
-GEX102,Engeharia de Software I,Raquel A. Pegoraro,M,5,S
-GCH008,Introdução à Prática Científica,Graziela S. Tonin,M,5,S
-GEX101,Linguagens Formais e Autômatos,Bráulio A. de Mello,M,5,S
-GEX110,Sistemas Operacionais,Marco A. Spohn,M,5,S
-GEN039,Grafos,Leandro M. Zatesko,N,5,N
-GEX104,Teoria da Computação,Leandro M. Zatesko,N,5,N
-GEX091,Banco de Dados II,Denio Duarte,N,5,N
-GEX102,Engeharia de Software I,Raquel A. Pegoraro,N,5,N
-GCH008,Introdução à Prática Científica,Graziela S. Tonin,N,5,N
-GEX107,Computação Gráfica,José Carlos Bins Filho,M,6,N
-GEX108,Construção Compiladores,Bráulio A. de Mello,M,6,N
-GEX103,Engenharia de Software II,Graziela S. Tonin,M,6,N
-GCH029,História da Fronteira Sul,José Carlos Radin,M,6,N
-GEX105,Redes de Computadores,Marco A. Spohn,M,6,N
-GCS107,Planejamento e Gestão de Projetos,Raquel A. Pegoraro,M,6,N
-GEX036,Cálculo Numérico,Paulo Bosing,N,6,S
-GCS010,Direito e Cidadania,Adiles,N,6,S
-GEX101,Linguagens Formais e Autômatos,Bráulio A. de Mello,N,6,S
-GEX103,Engenharia de Software II,Graziela S. Tonin,N,6,S
-GCH029,História da Fronteira Sul,Delmir,N,6,S
-GCH012,Fundamentos da Crítica Social,Fernando Bilibio,M,7,S
-GEX106,Computação Distribuída,Emílio Wuerges,M,7,S
-GEX109,Inteligência Artificial,José Carlos Bins Filho,M,7,S
-OPT1,Optativa I,Leandro M. Zatesko,M,7,S
-OPT2,Optativa II,Adriano Padilha,M,7,S
-GEX119,Trabalho de Conclusão de Curso I,Claunir Pavan,M,7,S
-GEX110,Sistemas Operacionais,Marco A. Spohn,N,7,N
-GEX107,Computação Gráfica,José Carlos Bins Filho,N,7,N
-GEX108,Construção Compiladores,Bráulio A. de Mello,N,7,N
-GCH012,Fundamentos da Crítica Social,Fernando Bilibio,N,7,N
-GEX109,Inteligência Artificial,José Carlos Bins Filho,N,7,N
-GEX120,Trabalho de Conclusão de Curso II,Marco A. Spohn,M,8,N
-GCS011,"Meio Ambiente,  Economia e Sociedade",Andrezza Piekas,M,8,N
-GEX112,Segurança e Auditoria de Sistemas,Emílio Wuerges,M,8,N
-GCH011,Introdução ao Pensamento Social,Valdete Boni,N,8,S
-GEX105,Redes de Computadores,Claunir Pavan,N,8,S
-GCS107,Planejamento e Gestão de Projetos,Raquel A. Pegoraro,N,8,S
-OPT1,Optativa I,Leandro M. Zatesko,N,8,S
-OPT1,Optativa I,Bráulio A. de Mello,N,8,S
-GCS011,"Meio Ambiente,  Economia e Sociedade",Angelo,N,8,S
-GEX106,Computação Distribuída,Emílio Wuerges,N,9,N
-OPT2,Optativa II,Adriano Padilha,N,9,N
-GEX119,Trabalho de Conclusão de Curso I,Claunir Pavan,N,9,N
-GEX112,Segurança e Auditoria de Sistemas,Emílio Wuerges,N,9,N
-GEX120,Trabalho de Conclusão de Curso II,Marco A. Spohn,N,10,S
-OPT3,Optativa III,José Carlos Bins Filho,N,10,S
-OPT4,Optativa IV,Guilherme Dal Bianco,N,10,S
+GEX003,Algoritmos e Programação,Guilherme Dal Bianco,M,1,N
+GEX003,Algoritmos e Programação,Marcia Boel,M,1,N
+GEN001,Circuitos Digitais,Adriano Padilha,M,1,N
+GEN001,Circuitos Digitais,Jacson Matte,M,1,N
+GEX004,Geometria Analítica,Marina Geremia,M,1,N
+GEX002,Introdução à Informática,Raquel Pegoraro,M,1,N
+GLA001,Leitura e Produção Textual I,Aline Gravina,M,1,N
+GEX001,Matemática Instrumental,Lucia Menoncini,M,1,N
+GEX003,Algoritmos e Programação,Guilherme Dal Bianco,N,1,S
+GEX003,Algoritmos e Programação,Priscila Delabetha,N,1,S
+GEN001,Circuitos Digitais,Adriano Padilha,N,1,S
+GEN001,Circuitos Digitais,Jacson Matte,N,1,S
+GEX002,Introdução à Informática,Raquel Pegoraro,N,1,S
+GLA001,Leitura e Produção Textual I,Mari Stela Surdi,N,1,S
+GEX001,Matemática Instrumental,Ana Paula Rohrbek Chiarello,N,1,S
+GEX012,Álgebra Linear,Antonio Marcos Correa Neri,M,2,S
+GEX009,Cálculo I,Edson,M,2,S
+GEX006,Estatística Básica,Leandro Bordin,M,2,S
+GEX015,Estrutura de Dados I,Jacson Luis Matte,M,2,S
+GLA004,Leitura e Produção Textual II,Jaqueline Mendes,M,2,S
+GEX016,Sistemas Digitais,Jacson Luis Matte,M,2,S
+GEX004,Geometria Analítica,Marina Geremia,N,2,N
+GEX006,Estatística Básica,Gláucio Fontana,N,2,N
+GEX015,Estrutura de Dados I,Jacson Luis Matte,N,2,N
+GLA004,Leitura e Produção Textual II,Mari Estela Surdi,N,2,N
+GEX016,Sistemas Digitais,Emílio Wuerges,N,2,N
+GEX033,Cálculo II,Janice T. Reichert,M,3,N
+GEX092,Estrutura de Dados II,Guilherme Dal Bianco,M,3,N
+GEX093,Matemática Discreta,Paulo Bosing,M,3,N
+GEX100,Org. Computadores,Jacson Luis Matte,M,3,N
+GEX005,Probabilidade e Estatística,Éverton,M,3,N
+GEX098,Programação I,Marcia Boell,M,3,N
+GEX012,Álgebra Linear,Antonio Marcos Correa Neri,N,3,S
+GEX009,Cálculo I,Milton Kist,N,3,S
+GEX092,Estrutura de Dados II,Guilherme Dal Bianco,N,3,S
+GEX093,Matemática Discreta,Milton Kist,N,3,S
+GEX098,Programação I,Priscila Delabetha,N,3,S
+GEX090,Banco de Dados I,Denio Duarte,M,4,S
+GEX036,Cálculo Numérico,Pedro Borges,M,4,S
+GEN039,Grafos,Lais Borin,M,4,S
+GCH011,Introdução ao Pensamento Social,Rafael Knabben,M,4,S
+GEX099,Programação II,Priscila Delabetha,M,4,S
+GEX104,Teoria da Computação,Lais Borin,M,4,S
+GEX033,Cálculo II,Edson Ribeiro dos Santos,N,4,N
+GEX100,Org. Computadores,Adriano Padilha,N,4,N
+GEX005,Probabilidade e Estatística,Leandro Bordin,N,4,N
+GEX090,Banco de Dados I,Denio Duarte,N,4,N
+GEX099,Programação II,Marcia Boell,N,4,N
+GEX091,Banco de Dados II,Denio Duarte,M,5,N
+GCS010,Direito e Cidadania,Claudete Soares,M,5,N
+GEX102,Engeharia de Software I,Raquel A. Pegoraro,M,5,N
+GCH008,Introdução à Prática Científica,Graziela S. Tonin,M,5,N
+GEX101,Linguagens Formais e Autômatos,Bráulio A. de Mello,M,5,N
+GEX110,Sistemas Operacionais,Marco A. Spohn,M,5,N
+GEN039,Grafos,Lais Borin,N,5,S
+GEX104,Teoria da Computação,Lais Borin,N,5,S
+GEX091,Banco de Dados II,Denio Duarte,N,5,S
+GEX102,Engeharia de Software I,Raquel A. Pegoraro,N,5,S
+GCH008,Introdução à Prática Científica,Graziela S. Tonin,N,5,S
+GEX107,Computação Gráfica,José Carlos Bins Filho,M,6,S
+GEX108,Construção Compiladores,Bráulio A. de Mello,M,6,S
+GEX103,Engenharia de Software II,Graziela S. Tonin,M,6,S
+GCH029,História da Fronteira Sul,José Tadeu,M,6,S
+GEX105,Redes de Computadores,Claunir Pavan,M,6,S
+GCS107,Planejamento e Gestão de Projetos,Raquel A. Pegoraro,M,6,S
+GEX036,Cálculo Numérico,Paulo Bosing,N,6,N
+GCS010,Direito e Cidadania,Adiles,N,6,N
+GEX101,Linguagens Formais e Autômatos,Bráulio A. de Mello,N,6,N
+GEX103,Engenharia de Software II,Graziela S. Tonin,N,6,N
+GCH029,História da Fronteira Sul,Delmir,N,6,N
+GCH012,Fundamentos da Crítica Social,Fernando Bilibio,M,7,N
+GEX106,Computação Distribuída,Emílio Wuerges,M,7,N
+GEX109,Inteligência Artificial,José Carlos Bins Filho,M,7,N
+OPT1,Optativa I,Leandro M. Zatesko,M,7,N
+OPT2,Optativa II,Adriano Padilha,M,7,N
+GEX119,Trabalho de Conclusão de Curso I,Claunir Pavan,M,7,N
+GEX110,Sistemas Operacionais,Marco A. Spohn,N,7,S
+GEX107,Computação Gráfica,José Carlos Bins Filho,N,7,S
+GEX108,Construção Compiladores,Bráulio A. de Mello,N,7,S
+GCH012,Fundamentos da Crítica Social,Ricardo Niquetti,N,7,S
+GEX109,Inteligência Artificial,José Carlos Bins Filho,N,7,S
+GEX120,Trabalho de Conclusão de Curso II,Marco A. Spohn,M,8,S
+GCS011,"Meio Ambiente,  Economia e Sociedade",Andrezza Piekas,M,8,S
+GEX112,Segurança e Auditoria de Sistemas,Emílio Wuerges,M,8,S
+OPT3,Optativa III,Denio Duarte,M,8,S
+OPT4,Optativa IV,Adriano Padilha,M,8,S
+GCH011,Introdução ao Pensamento Social,Valdete Boni,N,8,N
+GEX105,Redes de Computadores,Claunir Pavan,N,8,N
+GCS107,Planejamento e Gestão de Projetos,Raquel A. Pegoraro,N,8,N
+OPT1,Optativa I,Leandro M. Zatesko,N,8,N
+OPT1,Optativa I,Bráulio A. de Mello,N,8,N
+GCS011,"Meio Ambiente,  Economia e Sociedade",Angelo,N,8,N
+GEX106,Computação Distribuída,Emílio Wuerges,N,9,S
+OPT2,Optativa II,Claunir Pavan,N,9,S
+GEX119,Trabalho de Conclusão de Curso I,Bráulio A. de Mello,N,9,S
+GEX112,Segurança e Auditoria de Sistemas,Emílio Wuerges,N,9,S
+GEX120,Trabalho de Conclusão de Curso II,Marco A. Spohn,N,10,N
+OPT3,Optativa III,José Carlos Bins Filho,N,10,N
+OPT4,Optativa IV,Guilherme Dal Bianco,N,10,N
 GEX433,Modelagem e Simulação,Bráulio A. de Mello,M,11,N
 GEX452,Tópicos especiais em sistemas distribuídos,Claunir Pavan,M,11,N
 GEX450,Tópicos especiais em qualidade de software,Graziela S. Tonin,M,11,N
@@ -105,3 +107,7 @@ GEX450,Tópicos especiais em qualidade de software,Graziela S. Tonin,N,11,N
 GEX433,Modelagem e Simulação,Bráulio A. de Mello,M,11,N
 GEX452,Tópicos especiais em sistemas distribuídos,Claunir Pavan,M,11,N
 GEX450,Tópicos especiais em qualidade de software,Graziela S. Tonin,M,11,N
+GEX003,Algoritmos e Programação,Andressa Sebben,N,11,S
+GEX003,Algoritmos e Programação,Priscila Delabetha,N,11,S
+GEN001,Circuitos Digitais,Jacson Matte,N,11,S
+GEX001,Matemática Instrumental,Janice T. Reichert,N,11,S

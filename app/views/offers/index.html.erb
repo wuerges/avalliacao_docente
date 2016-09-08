@@ -9,10 +9,10 @@
       <th>Nome</th>
       <th>Professor</th>
       <th>Turno</th>
-      <% if logged_in? %>
+      <% #if logged_in? %>
         <th>Respostas</th>
         <th>Link para responder</th>
-    <% end %>
+      <% #end %>
     </tr>
   </thead>
 
@@ -25,10 +25,10 @@
           <td><%= offer.course.name %></td>
           <td><%= offer.professor.name %></td>
           <td><%= offer.turno %></td>
-          <% if logged_in? %>
+          <% # if logged_in? %>
             <td><%= link_to 'Respostas', offer_answers_path(offer.secure_list_id) %></td>
             <td><%= link_to 'New Answer', new_offer_answer_path(offer.secure_create_id) %> </td>
-          <% end %>
+          <% # end %>
         </tr>
       <% end %>
     <% end %>
