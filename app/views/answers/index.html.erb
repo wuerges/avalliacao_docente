@@ -1,3 +1,4 @@
+
 <p id="notice"><%= notice %></p>
 
 <h1>Listagem de respostas para disciplina:
@@ -34,6 +35,11 @@
   </tbody>
 </table>
 
+<% @data.each do |q, as| %>
+  <h2> Pergunta:  <%= q %> </h2>
+  <p> <%= teste(as) %> </p>
+<% end %>
+
+
 <br>
 
-<% #= link_to 'New Answer', new_offer_answer_path(params) %>

@@ -8,6 +8,12 @@ class AnswersController < ApplicationController
   def index
     @offer = Offer.find_by(secure_list_id: params[:secure_list_id])
     @answers = @offer.answers
+
+    @data = Answer.resposta_pergunta.keys.map { |k|
+      @answers.map { |a| 
+        [Answer.todas_perguntas[k], a.texto(k)]
+      }
+    }.flatten(1).group_by { |k,v| k }
   end
 
   # GET /answers/1

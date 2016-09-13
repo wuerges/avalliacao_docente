@@ -40,6 +40,9 @@ class Answer < ActiveRecord::Base
       :a14 => "Quanto à preocupação com a aprendizagem do aluno, a atuação do professor é:"
     }
   end
+  def self.todas_perguntas
+    self.como_aluno.merge self.sobre_professor
+  end
 
   def self.resposta_pergunta
     bom_mal = (1..5).zip ["péssimo", "ruim", "regular", "bom", "excelente"]
