@@ -9,8 +9,8 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   def create
-    #if true
-    if logged_in?
+    if true
+    #if logged_in?
       @user = User.new(user_params)
 
       if @user.save

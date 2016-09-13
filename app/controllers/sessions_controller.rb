@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     if @user && @user.authenticate(params[:session][:password])
       login
       #session[:user_id] = @user.id
-      redirect_to offers_path
+      redirect_to links_path
     else 
       render 'new'
     end
