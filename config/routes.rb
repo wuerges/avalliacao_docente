@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   get 'ok', to: 'answers#ok', as: 'answer_ok'
 
 
-  resources :users
+  #resources :users
   #resources :offers do #, :param => :secure_id do 
   #  resources :answers
   #end
