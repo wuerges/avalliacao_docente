@@ -9,26 +9,24 @@
       <th>Nome</th>
       <th>Professor</th>
       <th>Turno</th>
-      <% #if logged_in? %>
-        <th>Respostas</th>
-        <th>Link para responder</th>
-      <% #end %>
+      <th>Respostas</th>
+      <th>Número de Respostas</th>
+      <th>Link para responder</th>
     </tr>
   </thead>
 
   <tbody>
     <% @offers.select { |o| o.active }.group_by { |o| o.semester }.sort_by { |s, os| s }.each do |s, offers| %>
-      <tr> <th colspan="4"> Fase: <%= s %> </th> </tr>
+      <tr> <th colspan="7"> Fase: <%= s %> </th> </tr>
       <% offers.sort_by { |o| o.course.code }.each do |offer| %>
         <tr>
           <td><%= offer.course.code %></td>
           <td><%= offer.course.name %></td>
           <td><%= offer.professor.name %></td>
           <td><%= offer.turno %></td>
-          <% # if logged_in? %>
-            <td><%= link_to 'Respostas', offer_answers_path(offer.secure_list_id) %></td>
-            <td><%= link_to 'New Answer', new_offer_answer_path(offer.secure_create_id) %> </td>
-          <% # end %>
+          <td><%= link_to 'Respostas', offer_answers_path(offer.secure_list_id) %></td>
+          <td><%= offer.answers.count %></td>
+          <td><%= link_to 'New Answer', new_offer_answer_path(offer.secure_create_id) %> </td>
         </tr>
       <% end %>
     <% end %>
