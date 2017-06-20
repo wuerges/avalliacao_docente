@@ -13,12 +13,16 @@ require 'csv'
 
 l = false
 
-CSV.foreach("db/disciplinas.csv") do |row|
+CSV.foreach("db/disciplinas_2017_1.csv") do |row|
   if l
-    codigo, nome, professor, turno, fase, ativo = row
+    begin
+      codigo, nome, professor, turno, fase, ativo = row
 
-    Offer.create_by_names!(codigo, nome, professor,
-                         turno, fase, ativo)
+      Offer.create_by_names!(codigo, nome, professor,
+                           turno, fase, ativo)
+    rescue
+      puts "Erro:", row
+    end
   end
   l = true
 end
